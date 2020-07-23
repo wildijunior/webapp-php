@@ -1,7 +1,7 @@
 # webapp
-Meu Primeiro Web APP. 
-Projeto de fim de curso web completo. 
+Web APP - Twitter clone 
 Front-end e Back-end.
+
 * HTML 5
 * CSS 3
 * BOOTSTRAP
