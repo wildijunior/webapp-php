@@ -2,12 +2,10 @@
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-
 # require class to create user on db
 require_once 'db_class.php';
 
 # resgata valores 
-$nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 
@@ -19,14 +17,15 @@ $objt_db = new db();
 $objt_db->conectar();
 
 # cria query para insercao de dados no db
-$sql = "INSERT INTO usuarios(nome, email, senha) VALUES('$nome','$email','$senha')";
+$sql = "SELECT * FROM usuarios WHERE nome = '$email' AND senha = '$senha'";
 
 # tenta insercao
 if (mysqli_query($objt_db->conectar(), $sql)) {
-    echo 'CADASTRO REALIZADO COM SUCESSO';
+    echo 'ACHEI EU LOGIN';
 } else {
     die("Falha de conexao: " . mysqli_connect_error());
 }
+
 
 ?>
 
@@ -41,26 +40,15 @@ if (mysqli_query($objt_db->conectar(), $sql)) {
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/styles.css">
-
-
-    <title>TWITTER CLONE</title>
+    <title>Web App</title>
 </head>
 
 <body>
+    <?php require 'header.php' ?>
 
-
-    <!-- BARRA DE NAVEGACAO -->
-    <?php require_once './header.php' ?>
-
-
-    <!-- INICIO SECTION -->
-    <section class='caixinha'>
-        <div class='container'>
-            <h4>CADASTRO EFETUADO COM SUCESSO</h4>
-            <a href='index.php' class='btn btn-success'>BACK TO INDEX TO LOGIN</a>
-        </div>
-    </section>
+    <div class="container">
+        Seja bem vindo!!
+    </div>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -4,94 +4,50 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/styles.css">
+
 
     <title>TWITTER CLONE</title>
 </head>
 
 <body>
 
-    <!-- BARRA DE NAVEGACAO -->
-    <nav class='navbar navbar-dark bg-primary fixed-top navbar-expand-lg'>
-
-        <!-- CONTAINER -->
-        <div class='container'>
-
-            <!-- BRAND -->
-            <a class='navbar-brand' href="index.php">
-                <img src="img/web.png" width="42px">
-            </a>
-
-            <!-- BTN TOGGLER -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- DIV COLLAPSE -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-
-                <!-- UL'S -->
-                <ul class='nav justify-content-center'>
-
-                    <!-- DIV DROPDOWN -->
-                    <div class="dropdown">
-
-                        <!-- LI'S -->
-
-                        <li class='nav-item'>
-
-                            <a class='nav-link' href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                LOGAR
-                            </a>
-
-                            <!-- FORM DE LOGIN -->
-                            <form class='dropdown-menu p-4' id='dropdownMenuLink' action="">
-                                <div class="form-group">
-                                    <input class='form-control' type="text" name='nome' id='nome' placeholder="Nome">
-                                </div>
-
-                                <div class='form-group'>
-                                    <input class='form-control' type="password" name='senha' id='senha' placeholder="Senha">
-                                </div>
-
-                                <button class='btn btn-info' type="submit">ENTRAR</button>
-                            </form>
-                        </li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="img/web.png" width="42px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="cadastrese.php">Cadastrar</a>
                     </div>
-
-                    <li class='nav-item'>
-                        <a class='nav-link' href="cadastrese.php">CADASTRE-SE</a>
-                    </li>
-                </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+
 
     <!-- INICIO SECTION -->
-    <section class='caixinha'>
-        <div class='container'>
-            <div class='jumbotron'>
-                <h4>WEB APP</h4>
-            </div>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Exemplo de Login</h1>
+            <p class="col-md-8 fs-4">Simples web app.</p>
         </div>
-    </section>
+    </div>
 
 
-    <!-- FOOTER -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-    <footer style="margin-top: 25%;">
-        <p>&copy; 2020 - Wildi Jr.</p>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
